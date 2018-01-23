@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E11EA5C82017A1D300703787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11EA5C72017A1D300703787 /* AppDelegate.swift */; };
-		E11EA5CA2017A1D300703787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11EA5C92017A1D300703787 /* ViewController.swift */; };
 		E11EA5CD2017A1D300703787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11EA5CB2017A1D300703787 /* Main.storyboard */; };
 		E11EA5CF2017A1D300703787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11EA5CE2017A1D300703787 /* Assets.xcassets */; };
 		E11EA5D22017A1D300703787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11EA5D02017A1D300703787 /* LaunchScreen.storyboard */; };
+		E11EA5DA2017A7A000703787 /* DaysOfTheWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11EA5D92017A7A000703787 /* DaysOfTheWeekViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E11EA5C42017A1D300703787 /* DaysOfTheWeek2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaysOfTheWeek2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E11EA5C72017A1D300703787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E11EA5C92017A1D300703787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E11EA5CC2017A1D300703787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E11EA5CE2017A1D300703787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E11EA5D12017A1D300703787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E11EA5D32017A1D300703787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11EA5D92017A7A000703787 /* DaysOfTheWeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysOfTheWeekViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				E11EA5C72017A1D300703787 /* AppDelegate.swift */,
-				E11EA5C92017A1D300703787 /* ViewController.swift */,
 				E11EA5CB2017A1D300703787 /* Main.storyboard */,
+				E11EA5D92017A7A000703787 /* DaysOfTheWeekViewController.swift */,
 				E11EA5CE2017A1D300703787 /* Assets.xcassets */,
 				E11EA5D02017A1D300703787 /* LaunchScreen.storyboard */,
 				E11EA5D32017A1D300703787 /* Info.plist */,
@@ -136,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E11EA5CA2017A1D300703787 /* ViewController.swift in Sources */,
+				E11EA5DA2017A7A000703787 /* DaysOfTheWeekViewController.swift in Sources */,
 				E11EA5C82017A1D300703787 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
