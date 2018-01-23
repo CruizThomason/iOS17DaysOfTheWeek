@@ -22,16 +22,25 @@ class DaysOfTheWeekViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+       // 1) Check Segue ID
+        if segue.identifier == "toDayDetailVC" {
+            // 2) get the destinationVC
+            guard let destinationVC = segue.destination as? DayDetailViewController
+            else { return }
+            
+            // 3) get the selected day
+            if let selectedDay = DaysOfTheWeekTableView.indexPathForSelectedRow {
+                
+                let day = daysOfTheWeek[selectedDay.row]
+                
+                // 5) Pass the selectDay to the datailVC
+                destinationVC.day = day
+            }
+        }
     }
-    */
-
 }
 
 extension DaysOfTheWeekViewController: UITableViewDelegate, UITableViewDataSource {
@@ -44,6 +53,7 @@ extension DaysOfTheWeekViewController: UITableViewDelegate, UITableViewDataSourc
         let cell = tableView.dequeueReusableCell(withIdentifier: "dayCell", for: indexPath)
         
         let day = daysOfTheWeek[indexPath.row]
+        let cellNumber = [indexPath.row]
         
         cell.textLabel?.text = day
         
